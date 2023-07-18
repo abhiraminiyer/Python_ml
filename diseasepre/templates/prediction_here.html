@@ -1,0 +1,145 @@
+{% include 'navbar.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+<title>Projects</title>
+		<section class="project-area">
+			<center>
+			<font size="6">
+
+<p>PROJECTS</p>
+
+			</font>
+				<div id="project" class="project-item">
+					<h2>Predict Disease</h2>
+                <form role="form" name="frm" method="post" >
+					{% csrf_token %}
+					Passed value is : {{rs}}
+                <p>
+                 <table align="center" width="300" border="2">
+                  <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 1</Th>
+					  <td><select name="symp1" id="symp1">
+					  <option value="1">Itching</option>
+					  <option value="4">Continuous sneezing</option>
+					  <option value="5">Stomach pain</option>
+					  <option value="2">Muscle weakness</option>
+					  <option value="4">Fatigue</option>
+					  <option value="4">Loss of balance</option>
+					  <option value="4">Dark urine</option>
+					  <option value="3">Red spots over body</option>
+					  <option value="7">Coma</option>
+					  <option value="4">Fluid overal</option>
+					  <option value="0">No symptom</option>
+
+				  </select></td>
+                  </tr>
+                      <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 2</Th>
+						  <td><select name="symp2" id="symp2">
+							  <option value="3">Skin Rash</option>
+							  <option value="5">Shivering</option>
+							  <option value="3">Acidity</option>
+							  <option value="3">Yellowish skin</option>
+							  <option value="6">Patches in throat</option>
+							  <option value="3">Weight loss</option>
+							  <option value="3">Sunken eyes</option>
+							  <option value="4">Stiff neck</option>
+							  <option value="3">Sweating</option>
+							  <option value="4">Constipation</option>
+							  <option value="0">No Symptopm</option>
+						  </select></td>
+                  </tr>
+					     </tr>
+					 <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 3</Th>
+						 <td><select name="symp3" id="symp3">
+							 <option value="4">Nodal skin erruptions</option>
+							 <option value="3">Chills</option>
+							 <option value="4">Ulcers on tongue</option>
+							 <option value="5">Nausea</option>
+							 <option value="4">Abdominal pain</option>
+							 <option value="6">Burning micturition</option>
+							 <option value="5">Passing of gases</option>
+							 <option value="7">High fever</option>
+							 <option value="5">Restlessness</option>
+							 <option value="3">Visual disturbance </option>
+							 <option value="0">No Symptopm</option></select></td>
+                  </tr>
+					     </tr>
+					 <tr>
+                    <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 4</Th>
+						 <td><select name="symp4" id="symp4">
+							 <option value="6">Dischromic patches</option>
+							 <option value="4">Watering from eyes</option>
+							 <option value="5">Vomiting</option>
+							 <option value="4">Yellowing of eyes</option>
+							 <option value="6">Spotting Urination</option>
+							 <option value="4">Internal itching</option>
+							 <option value="5">Extra marital contact</option>
+							 <option value="2">Lethargy</option>
+							 <option value="4">Dehydration</option>
+							 <option value="7">Weakness in limbs</option>
+							 <option value="0">No Symptopm</option>
+						 </select></td>
+                  </tr>
+					     </tr>
+					 <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 5</Th>
+						 <td><select name="symp5" id="symp5">
+							 <option value="4">Continuous sneezing</option>
+							 <option value="4">cough</option>
+							 <option value="5">Indigestion</option>
+							 <option value="5">Irregular sugar level</option>
+							 <option value="6">Diahorea</option>
+							 <option value="5">Neck pain</option>
+							 <option value="5">Mild fever</option>
+							 <option value="4">Belly pain</option>
+							 <option value="5">Phlegm</option>
+							 <option value="3">Loss of smell</option>
+							 <option value="0">No Symptom</option>
+						 </select></td>
+                  </tr>
+					     </tr>
+					 <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 6</Th>
+						 <td><select name="symp6" id="symp6">
+							 <option value="7">Chest pain</option>
+							 <option value="5">Blurred and distorted vision</option>
+							 <option value="4">Mucoid sputum</option>
+							 <option value="4">Weakness of one body side</option>
+							 <option value="6">Swelled lymph nodes</option>
+							 <option value="4">Yellowing of eyes</option>
+							 <option value="7">Chest pain</option>
+							 <option value="4">Throat irritation</option>
+							 <option value="5">Fast heart rate</option>
+							 <option value="5">Pain during bowel movements</option>
+							 <option value="0">No Symptopm</option>
+						 </select></td>
+                  </tr>
+					     </tr>
+					 <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 7</Th>
+						 <td><select name="symp7" id="symp7">
+							 <option value="5">Swollen legs</option>
+							 <option value="4">Obesity</option>
+							 <option value="4">Polyuria</option>
+							 <option value="4">Dizziness</option>
+							 <option value="2">Altered sensorium</option>
+							 <option value="6">malaise</option>
+							 <option value="5">Receiving blood transfusion</option>
+							 <option value="6">Irritation in anus</option>
+							 <option value="4">Sinus pressure</option>
+							 <option value="4">Bruising</option>
+							 <option value="0">No Symptopm</option>
+						 </select></td>
+                  </tr>
+					     </tr>
+                      <tr>
+                     <Th>   <button type="submit" id="bt" name="bt">Predict Disease</button></Th> <td> <button type="reset" id="bt1" name="bt1">Clear</button></td>
+                  </tr>
+				</table>
+
+				</form>
+
+
+</p>

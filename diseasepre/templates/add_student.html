@@ -1,0 +1,71 @@
+{% include 'navbar.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+<title>Projects</title>
+		<section class="project-area">
+			<center>
+			<font size="6">
+
+<p>Disease Prediction Project</p>
+
+			</font>
+				<div id="project" class="project-item">
+				<h2>Disease Prediction Page</h2>
+
+                <form role="form" name="frm" method="post" >
+					{% csrf_token %}
+					Passed value is
+                <p>
+                <table align="center" width="300" border="2">
+                <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 1</Th> <td><select name="symp1" id="symp1"><option value="0">No Symptopm</option></select></td>
+                </tr>
+                <tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 2</Th> <td><select name="symp2" id="symp2"><option value="0">No Symptopm</option></select></td>
+                </tr>
+				<tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 3</Th> <td><select name="symp3" id="symp3"><option value="0">No Symptopm</option></select></td>
+                </tr>
+				<tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 4</Th> <td><select name="symp4" id="symp4"><option value="0">No Symptopm</option></select></td>
+				</tr>
+				<tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 5</Th> <td><select name="symp5" id="symp5"><option value="0">No Symptopm</option></select></td>
+				</tr>
+				<tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 4</Th> <td><select name="symp6" id="symp6"><option value="0">No Symptopm</option></select></td>
+				</tr>
+				<tr>
+                     <Th style="color:white; font-size:10pt;" ng-hide="true">Symptom 4</Th> <td><select name="symp7" id="symp7"><option value="0">No Symptopm</option></select></td>
+				</tr>
+				<tr>
+                     <Th>   <button type="submit" id="bt" name="bt">Predict Disease</button></Th> <td> <button type="reset" id="bt1" name="bt1">Clear</button></td>
+				</tr>
+				</table>
+
+				</form>
+
+
+</p>
+
+				</div>
+				<div id="project" class="project-item">
+					<h2>PROJECT 2 Yet To Come </h2>
+
+<p>The use of deep learning and machine learning (ML) in medical science is increasing,
+	particularly in the visual, audio, and language data fields. We aimed to build a new optimized ensemble model by
+	blending a DNN (deep neural network) model with two ML models for disease prediction using laboratory test results.
+	86 attributes (laboratory tests) were selected from datasets based on value counts, clinical importance-related features,
+	and missing values. We collected sample datasets on 5145 cases, including 326,686 laboratory test results.
+	We investigated a total of 39 specific diseases based on the International Classification of Diseases,
+	10th revision (ICD-10) codes. These datasets were used to construct light gradient boosting machine (LightGBM)
+	and extreme gradient boosting (XGBoost) ML models and a DNN model using TensorFlow. The optimized ensemble model
+	achieved an F1-score of 81% and prediction accuracy of 92% for the five most common diseases. The deep learning and ML
+	models showed differences in predictive power and disease classification patterns. We used a confusion matrix and
+	analyzed feature importance using the SHAP value method. Our new ML model achieved high efficiency of disease prediction
+	through classification of diseases. This study will be useful in the prediction and diagnosis of diseases. </p>
+
+				</div>
+			</div>
+			</center>
+		</section>

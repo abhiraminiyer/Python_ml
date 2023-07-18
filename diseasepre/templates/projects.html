@@ -1,0 +1,26 @@
+{% include 'navbar.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+<title>Projects</title>
+		<section class="project-area">
+			<center>
+			<font size="6">
+
+<p>PROJECTS</p>
+
+			</font>
+				<div id="project" class="project-item">
+					<h2>Confusion matrix of the ensemble model (optimal accuracy model)</h2>
+
+<p>Each disease has a unique ICD-10 code. While the feature importance method (analysis or coding) simply indicates the importance of a given feature (parameter), the mean SHAP method allows the effect of the features on classification (specific disease) to be calculated. We analyzed the mean SHAP values of the two ML models to determine how many features (laboratory tests) correlated with diseases (Figs. 2 and 3). For LightGBM, the TOP10 features with the highest predictive power among the 88 features tested were in the order of CP, LD, GP (γ-GTP), AL, PL, AG (age), TB (total bilirubin), Amyl (amylase), TrT (troponin-T), and W (white blood cell count). In particular, LD and GP were associated with malaria (B5) and acute hepatitis B (B1B), respectively (Supplementary Table S1, S9 and Fig. 2). For XGBoost, CP, PL, AL, LD, GP, W, AG, Amyl, TB, and CR were the ten most important features. Investigating the associations between diseases and features, we confirmed that acute myocardial infarction (I2B) contributed most to the increased CM level. In addition, increased CR was related to ESRD (N1C). Dilated cardiomyopathy (I4) and congestive heart failure (I5) were strongly associated with PB. AST (aspartate aminotransferase) was associated with toxic liver disease (K7B), while an increase in AL was associated with acute hepatitis A (B1A) (Supplementary Table S1, S9 and Fig. 3). For the DL model, the TOP10 features were CP, AG, CR, PB (Pro BNP), PL, TB, AB-O-Con (ABGA-O2 Content), GP, T/A (total protein/albumin), AB (albumin) using mean SHAP value.</p>
+
+				</div>
+				<div id="project" class="project-item">
+					<h2>ROC curve of the optimized ensemble model </h2>
+
+<p>In this study, our research has a novel point that we could predict 39 diseases accurately that are relatively commonly observed in patients visiting the emergency room through our model. We applied DL and ML models to laboratory data (features). For DL, we used a neural network with two hidden layers, with Relu as the activation function for the input and hidden layers and Softmax as the activation function for the output layer. We tried to improve performance through a hyperparameter optimization process. In general, deepening the neural network layer caused the serious problem of gradient vanishing. In this study, the use of three or more hidden layers caused gradient vanishing and overfitting problems, such as validation loss, to increase. Our neural net model demonstrated very good performance because all data (features), except for sex, were numerical and we optimized performance through tuning of hyperparameters. In this study, the DL (neural network) model also performed well in a categorical classification problem (disease classification) using structured medical data. Among ML models, we selected the LightGBM and XGBoost ML models because they are the state of the art (SOTA) boosting models that show the best performance for a general classification problem. I </p>
+
+				</div>
+			</div>
+			</center>
+		</section>
